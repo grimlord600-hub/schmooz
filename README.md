@@ -1,28 +1,33 @@
 # @schmooze/client
 
-Minimal TypeScript client for the Schmooze app API (`drogon.schmooze.tech`), IAM auth, Firebase Identity Toolkit, and OTEL collector.
+TypeScript client for the Schmooze app API: request signing, OTP login, Drogon/IAM endpoints, Firebase Identity Toolkit, and OTEL collector calls.
 
 ## Requirements
 
 - Node.js 18+
 
-## Install (local)
+## Install
 
 ```bash
-cd packages/schmooze-client
 npm install
 npm run build
 ```
 
 ## Configuration
 
-Load signing keys and tokens from the project [`schmooze_config.json`](../../schmooze_config.json):
+[`schmooze_config.json`](schmooze_config.json) ships with signing keys and device metadata. **`access_token` and `refresh_token` are empty** until you log in.
+
+1. Set `device_id` and signing fields (`hmac_key`, `jwt_secret`, `magic_constant`) for your environment.
+2. Run interactive login (below) or paste tokens from a capture into the same file locally.
+3. **Do not commit real session tokens.** After login, `schmooze_config.json` is updated on disk—review `git diff` before pushing.
 
 ```ts
 import { SchmoozeClient, loadConfig } from "@schmooze/client";
 
-const client = new SchmoozeClient(loadConfig("../../schmooze_config.json"));
+const client = new SchmoozeClient(loadConfig("./schmooze_config.json"));
 ```
+
+Signing keys for app 5.2.9+ come from Firebase Remote Config (`request_signature_key`, `client_signature_key`, `request_signature_salt` → `magic_constant`).
 
 ## Usage
 
@@ -32,27 +37,22 @@ const communities = await client.communities.available();
 await client.matches.defaultMatchAction(12345);
 ```
 
-### Login (OTP + Google / Firebase)
+### Login (phone OTP)
+
+The app flow: OTP → Firebase `fb_token` → `authorize` → `POST /v3/auth/login` → session bootstrap.
 
 ```ts
 await client.auth.sendOtp({ phoneNumber: "9876543210", attempt: 1 });
-await client.auth.verifyOtp({ otp: "123456", phoneNumber: "9876543210" });
-const verified = await client.auth.verifyCustomToken(customTokenFromBackend);
-await client.auth.getAccountInfo(verified.idToken);
-const auth = await client.auth.authorize({
-  idToken: verified.idToken,
-  deviceKey: config.deviceId,
-  firebaseId: verified.localId ?? "",
+const auth = await client.auth.loginWithPhoneOtp({
+  phoneNumber: "9876543210",
+  otp: "123456",
 });
-await client.auth.signIn(auth.authToken);
 await client.auth.completeSession();
 ```
 
-Or use `client.auth.loginWithPhoneAndGoogle({ ... })` when tokens are available.
-
 ### Telemetry
 
-OTEL endpoints accept opaque OTLP bodies (as captured from the app):
+OTEL collector methods accept opaque OTLP payloads (no `clientsignature`):
 
 ```ts
 await client.telemetry.sendMetrics(buffer, "application/x-protobuf");
@@ -60,7 +60,7 @@ await client.telemetry.sendMetrics(buffer, "application/x-protobuf");
 
 ## Endpoint manifest
 
-`npm run parse-har` reads [`../../captures/HTTPToolkit_2026-10-07_21-34_263-requests/HTTPToolkit_full-traffic.har`](../../captures/HTTPToolkit_2026-10-07_21-34_263-requests/HTTPToolkit_full-traffic.har) and writes `src/generated/endpoints.manifest.json`.
+`npm run parse-har` regenerates `src/generated/endpoints.manifest.json`. Point it at a local HAR file if you have one (see `scripts/parse-har.mjs`); the committed manifest works without a capture.
 
 ## Tests
 
@@ -68,24 +68,20 @@ await client.telemetry.sendMetrics(buffer, "application/x-protobuf");
 npm test
 ```
 
-Signing vectors match [`schmooze_api.py`](../../schmooze_api.py) `--verify-capture`.
+Includes signing parity checks (request hash + `clientsignature` JWT).
 
 ## Examples
 
 ```bash
-npx tsx examples/fetch-feed.ts ../../schmooze_config.json
+npx tsx examples/fetch-feed.ts
+npx tsx examples/fetch-feed.ts ./schmooze_config.json --show-logs=false
 ```
 
-### Interactive login (phone + OTP)
-
-Prompts for number and OTP, runs Firebase `fb_token` flow, saves tokens to config, then calls profile/feed APIs:
+### Interactive login
 
 ```bash
 npm run example:login
-# quiet (summary only)
 npm run example:login -- --show-logs=false
-# or
-npx tsx examples/interactive-login.ts ../../schmooze_config.json --show-logs=true
 ```
 
-Logs use `ISO8601 LEVEL message` lines. Phone numbers are never printed. Set `SCHMOOZE_SHOW_LOGS=false` for default quiet mode.
+Prompts for mobile number and OTP, saves tokens to `schmooze_config.json`, then calls profile/communities/posts APIs. Logs use `ISO8601 LEVEL message`; phone numbers are redacted. Override with `SCHMOOZE_SHOW_LOGS=false`.

@@ -7,7 +7,7 @@ import { SchmoozeClient, loadConfig } from "../src/index.js";
 
 const configPath =
   process.env.SCHMOOZE_CONFIG ??
-  resolve(process.cwd(), "../../schmooze_config.json");
+  resolve(process.cwd(), "schmooze_config.json");
 
 const phone = process.env.SCHMOOZE_PHONE ?? "+91XXXXXXXXXX";
 const otp = process.env.SCHMOOZE_OTP ?? "000000";

@@ -1,0 +1,16 @@
+{
+  "base_url": "https://drogon.schmooze.tech",
+  "iam_url": "https://drogon.schmooze.tech/iam-svc/v1/auth",
+  "device_id": "ef105979d2496d9b",
+  "access_token": "",
+  "refresh_token": "",
+  "app_version": "5.2.9.1",
+  "app_platform": "android",
+  "user_agent": "okhttp/5.4.0",
+  "hmac_key": "b00b89993af92d1b1963177261649fff22f09f06e286bc4d3b0a89baf4fbe7ea",
+  "jwt_secret": "EVfzVIsOH2r59sz1bAjl55b35oGfFMucLnuUCyMPIJ92hCISmlJu7N8n6YKI80CrtcJKL2bCGq2r1KzzwW50YhXAWRmgonn6T22C9t8JQz5hjZIfhNBcPLyI9J1RVAYE",
+  "magic_constant": "&4fc6a4f3b1110317",
+  "auto_refresh": true,
+  "max_iterations": 30,
+  "delay_seconds": 1
+}

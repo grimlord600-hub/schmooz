@@ -6,7 +6,7 @@ import { createExampleLogger, parseExampleArgs } from "./log.js";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const { configPath: configArg, showLogs } = parseExampleArgs(process.argv.slice(2));
 const configPath = resolve(
-  configArg ?? resolve(__dirname, "../../../schmooze_config.json"),
+  configArg ?? resolve(__dirname, "../schmooze_config.json"),
 );
 const log = createExampleLogger(showLogs);
 
