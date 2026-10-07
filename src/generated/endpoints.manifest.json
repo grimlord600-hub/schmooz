@@ -1,0 +1,966 @@
+{
+  "source": "C:\\Users\\GG Custom Computers\\Desktop\\blank-slate\\schmoz\\captures\\HTTPToolkit_2026-10-07_21-34_263-requests\\HTTPToolkit_full-traffic.har",
+  "generatedAt": "2026-10-07T16:40:18.280Z",
+  "endpoints": [
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/app/config",
+      "category": "app",
+      "requiresAccessToken": true,
+      "requiresClientSignature": true,
+      "samplePath": "/app/config",
+      "observedAuthorization": true
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/app/config/report-profile",
+      "category": "app",
+      "requiresAccessToken": true,
+      "requiresClientSignature": true,
+      "samplePath": "/app/config/report-profile",
+      "observedAuthorization": true
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/app/current-time",
+      "category": "app",
+      "requiresAccessToken": true,
+      "requiresClientSignature": true,
+      "samplePath": "/app/current-time",
+      "observedAuthorization": true
+    },
+    {
+      "method": "POST",
+      "host": "drogon.schmooze.tech",
+      "path": "/iam-svc/v1/auth/authorize",
+      "category": "auth",
+      "requiresAccessToken": false,
+      "requiresClientSignature": true,
+      "samplePath": "/iam-svc/v1/auth/authorize",
+      "observedAuthorization": false
+    },
+    {
+      "method": "POST",
+      "host": "drogon.schmooze.tech",
+      "path": "/iam-svc/v1/auth/otp/send",
+      "category": "auth",
+      "requiresAccessToken": false,
+      "requiresClientSignature": true,
+      "samplePath": "/iam-svc/v1/auth/otp/send",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/iam-svc/v1/auth/otp/verify",
+      "category": "auth",
+      "requiresAccessToken": false,
+      "requiresClientSignature": true,
+      "samplePath": "/iam-svc/v1/auth/otp/verify",
+      "observedAuthorization": false
+    },
+    {
+      "method": "POST",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/auth/logout",
+      "category": "auth",
+      "requiresAccessToken": true,
+      "requiresClientSignature": true,
+      "samplePath": "/v1/auth/logout",
+      "observedAuthorization": true
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/chat/customer-support/chatroom",
+      "category": "app",
+      "requiresAccessToken": true,
+      "requiresClientSignature": true,
+      "samplePath": "/v1/chat/customer-support/chatroom",
+      "observedAuthorization": true
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/communities/available",
+      "category": "app",
+      "requiresAccessToken": true,
+      "requiresClientSignature": true,
+      "samplePath": "/v1/communities/available",
+      "observedAuthorization": true
+    },
+    {
+      "method": "POST",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/matches/{id}/action",
+      "category": "matches",
+      "requiresAccessToken": true,
+      "requiresClientSignature": true,
+      "samplePath": "/v1/matches/4609549/action",
+      "observedAuthorization": true
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/matches/match_equation",
+      "category": "matches",
+      "requiresAccessToken": true,
+      "requiresClientSignature": true,
+      "samplePath": "/v1/matches/match_equation",
+      "observedAuthorization": true
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/matches/pending-match/nls/search-suggestions",
+      "category": "matches",
+      "requiresAccessToken": true,
+      "requiresClientSignature": true,
+      "samplePath": "/v1/matches/pending-match/nls/search-suggestions",
+      "observedAuthorization": true
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/matches/pending-match/oracle/curated-for-you",
+      "category": "matches",
+      "requiresAccessToken": true,
+      "requiresClientSignature": true,
+      "samplePath": "/v1/matches/pending-match/oracle/curated-for-you",
+      "observedAuthorization": true
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/matches/poke/suggestions",
+      "category": "matches",
+      "requiresAccessToken": true,
+      "requiresClientSignature": true,
+      "samplePath": "/v1/matches/poke/suggestions",
+      "observedAuthorization": true
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/notification/android/channel-groups",
+      "category": "app",
+      "requiresAccessToken": true,
+      "requiresClientSignature": true,
+      "samplePath": "/v1/notification/android/channel-groups",
+      "observedAuthorization": true
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/posts/fetch",
+      "category": "posts",
+      "requiresAccessToken": true,
+      "requiresClientSignature": true,
+      "samplePath": "/v1/posts/fetch",
+      "observedAuthorization": true
+    },
+    {
+      "method": "POST",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/posts/interact/{id}/bookmark",
+      "category": "posts",
+      "requiresAccessToken": true,
+      "requiresClientSignature": true,
+      "samplePath": "/v1/posts/interact/628577/bookmark",
+      "observedAuthorization": true
+    },
+    {
+      "method": "POST",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/posts/interact/{id}/left",
+      "category": "posts",
+      "requiresAccessToken": true,
+      "requiresClientSignature": true,
+      "samplePath": "/v1/posts/interact/626311/left",
+      "observedAuthorization": true
+    },
+    {
+      "method": "POST",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/posts/interact/{id}/relate",
+      "category": "posts",
+      "requiresAccessToken": true,
+      "requiresClientSignature": true,
+      "samplePath": "/v1/posts/interact/624839/relate",
+      "observedAuthorization": true
+    },
+    {
+      "method": "POST",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/posts/interact/{id}/right",
+      "category": "posts",
+      "requiresAccessToken": true,
+      "requiresClientSignature": true,
+      "samplePath": "/v1/posts/interact/621035/right",
+      "observedAuthorization": true
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/referral/card/me",
+      "category": "app",
+      "requiresAccessToken": true,
+      "requiresClientSignature": true,
+      "samplePath": "/v1/referral/card/me",
+      "observedAuthorization": true
+    },
+    {
+      "method": "POST",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/tags/seeds",
+      "category": "app",
+      "requiresAccessToken": true,
+      "requiresClientSignature": true,
+      "samplePath": "/v1/tags/seeds",
+      "observedAuthorization": true
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/third-party/s3/assets/schmooze-media/post-icons/Instagram_rmg4dr.webp",
+      "category": "assets",
+      "requiresAccessToken": true,
+      "requiresClientSignature": false,
+      "samplePath": "/v1/third-party/s3/assets/schmooze-media/post-icons/Instagram_rmg4dr.webp",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/third-party/s3/assets/schmooze-media/static-assets/app-assets/delete-reasons/didnt-like-memes.png",
+      "category": "assets",
+      "requiresAccessToken": true,
+      "requiresClientSignature": false,
+      "samplePath": "/v1/third-party/s3/assets/schmooze-media/static-assets/app-assets/delete-reasons/didnt-like-memes.png",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/third-party/s3/assets/schmooze-media/static-assets/app-assets/delete-reasons/found-someone.png",
+      "category": "assets",
+      "requiresAccessToken": true,
+      "requiresClientSignature": false,
+      "samplePath": "/v1/third-party/s3/assets/schmooze-media/static-assets/app-assets/delete-reasons/found-someone.png",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/third-party/s3/assets/schmooze-media/static-assets/app-assets/delete-reasons/fresh-start.png",
+      "category": "assets",
+      "requiresAccessToken": true,
+      "requiresClientSignature": false,
+      "samplePath": "/v1/third-party/s3/assets/schmooze-media/static-assets/app-assets/delete-reasons/fresh-start.png",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/third-party/s3/assets/schmooze-media/static-assets/app-assets/delete-reasons/need-a-break.png",
+      "category": "assets",
+      "requiresAccessToken": true,
+      "requiresClientSignature": false,
+      "samplePath": "/v1/third-party/s3/assets/schmooze-media/static-assets/app-assets/delete-reasons/need-a-break.png",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/third-party/s3/assets/schmooze-media/static-assets/app-assets/delete-reasons/no-good-matches.png",
+      "category": "assets",
+      "requiresAccessToken": true,
+      "requiresClientSignature": false,
+      "samplePath": "/v1/third-party/s3/assets/schmooze-media/static-assets/app-assets/delete-reasons/no-good-matches.png",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/third-party/s3/assets/schmooze-media/static-assets/app-assets/delete-reasons/not-responding.png",
+      "category": "assets",
+      "requiresAccessToken": true,
+      "requiresClientSignature": false,
+      "samplePath": "/v1/third-party/s3/assets/schmooze-media/static-assets/app-assets/delete-reasons/not-responding.png",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/third-party/s3/assets/schmooze-media/static-assets/app-assets/delete-reasons/too-many-bugs.png",
+      "category": "assets",
+      "requiresAccessToken": true,
+      "requiresClientSignature": false,
+      "samplePath": "/v1/third-party/s3/assets/schmooze-media/static-assets/app-assets/delete-reasons/too-many-bugs.png",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/third-party/s3/assets/schmooze-media/static-assets/app-assets/zodiac-signs/gemini-g.webp",
+      "category": "assets",
+      "requiresAccessToken": true,
+      "requiresClientSignature": false,
+      "samplePath": "/v1/third-party/s3/assets/schmooze-media/static-assets/app-assets/zodiac-signs/gemini-g.webp",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/third-party/s3/assets/schmooze-media/static-assets/app-assets/zodiac-signs/libra-g.webp",
+      "category": "assets",
+      "requiresAccessToken": true,
+      "requiresClientSignature": false,
+      "samplePath": "/v1/third-party/s3/assets/schmooze-media/static-assets/app-assets/zodiac-signs/libra-g.webp",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_17848528119350573.jpg",
+      "category": "assets",
+      "requiresAccessToken": true,
+      "requiresClientSignature": false,
+      "samplePath": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_17848528119350573.jpg",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_17851187550696507.heic",
+      "category": "assets",
+      "requiresAccessToken": true,
+      "requiresClientSignature": false,
+      "samplePath": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_17851187550696507.heic",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_17895879975446102.jpg",
+      "category": "assets",
+      "requiresAccessToken": true,
+      "requiresClientSignature": false,
+      "samplePath": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_17895879975446102.jpg",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_17896628934039215.jpg",
+      "category": "assets",
+      "requiresAccessToken": true,
+      "requiresClientSignature": false,
+      "samplePath": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_17896628934039215.jpg",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_17912999313153281.jpg",
+      "category": "assets",
+      "requiresAccessToken": true,
+      "requiresClientSignature": false,
+      "samplePath": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_17912999313153281.jpg",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_17947830567058687.jpg",
+      "category": "assets",
+      "requiresAccessToken": true,
+      "requiresClientSignature": false,
+      "samplePath": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_17947830567058687.jpg",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_18005685158423307.jpg",
+      "category": "assets",
+      "requiresAccessToken": true,
+      "requiresClientSignature": false,
+      "samplePath": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_18005685158423307.jpg",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_18019705925666036.heic",
+      "category": "assets",
+      "requiresAccessToken": true,
+      "requiresClientSignature": false,
+      "samplePath": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_18019705925666036.heic",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_18050695175147658.jpg",
+      "category": "assets",
+      "requiresAccessToken": true,
+      "requiresClientSignature": false,
+      "samplePath": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_18050695175147658.jpg",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_18064369472441205.jpg",
+      "category": "assets",
+      "requiresAccessToken": true,
+      "requiresClientSignature": false,
+      "samplePath": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_18064369472441205.jpg",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_18065960044580215.jpg",
+      "category": "assets",
+      "requiresAccessToken": true,
+      "requiresClientSignature": false,
+      "samplePath": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_18065960044580215.jpg",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_18075576001606844.jpg",
+      "category": "assets",
+      "requiresAccessToken": true,
+      "requiresClientSignature": false,
+      "samplePath": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_18075576001606844.jpg",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_18086498575495246.jpg",
+      "category": "assets",
+      "requiresAccessToken": true,
+      "requiresClientSignature": false,
+      "samplePath": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_18086498575495246.jpg",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_18090326017963780.heic",
+      "category": "assets",
+      "requiresAccessToken": true,
+      "requiresClientSignature": false,
+      "samplePath": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_18090326017963780.heic",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_18097596980174314.jpg",
+      "category": "assets",
+      "requiresAccessToken": true,
+      "requiresClientSignature": false,
+      "samplePath": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_18097596980174314.jpg",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_18098536654466887.heic",
+      "category": "assets",
+      "requiresAccessToken": true,
+      "requiresClientSignature": false,
+      "samplePath": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_18098536654466887.heic",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_18100682393317044.jpg",
+      "category": "assets",
+      "requiresAccessToken": true,
+      "requiresClientSignature": false,
+      "samplePath": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_18100682393317044.jpg",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_18101402731940321.jpg",
+      "category": "assets",
+      "requiresAccessToken": true,
+      "requiresClientSignature": false,
+      "samplePath": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_18101402731940321.jpg",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_18117486217684353.webp",
+      "category": "assets",
+      "requiresAccessToken": true,
+      "requiresClientSignature": false,
+      "samplePath": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_18117486217684353.webp",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_18124906435530572.heic",
+      "category": "assets",
+      "requiresAccessToken": true,
+      "requiresClientSignature": false,
+      "samplePath": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_18124906435530572.heic",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_18158589217715567.jpg",
+      "category": "assets",
+      "requiresAccessToken": true,
+      "requiresClientSignature": false,
+      "samplePath": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_18158589217715567.jpg",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_18160484632449819.webp",
+      "category": "assets",
+      "requiresAccessToken": true,
+      "requiresClientSignature": false,
+      "samplePath": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_18160484632449819.webp",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_18222849463089343.jpg",
+      "category": "assets",
+      "requiresAccessToken": true,
+      "requiresClientSignature": false,
+      "samplePath": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_18222849463089343.jpg",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_18237882709269346.jpg",
+      "category": "assets",
+      "requiresAccessToken": true,
+      "requiresClientSignature": false,
+      "samplePath": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_18237882709269346.jpg",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_18373185598162558.jpg",
+      "category": "assets",
+      "requiresAccessToken": true,
+      "requiresClientSignature": false,
+      "samplePath": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_18373185598162558.jpg",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_18380167717108295.heic",
+      "category": "assets",
+      "requiresAccessToken": true,
+      "requiresClientSignature": false,
+      "samplePath": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_18380167717108295.heic",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_18591738760024682.webp",
+      "category": "assets",
+      "requiresAccessToken": true,
+      "requiresClientSignature": false,
+      "samplePath": "/v1/third-party/s3/schmooze-media/schoomzeApp_insta-content_18591738760024682.webp",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/third-party/s3/schmooze-media/static-assets/app-assets/shortcut/blurred-profile/female-10.webp",
+      "category": "assets",
+      "requiresAccessToken": true,
+      "requiresClientSignature": false,
+      "samplePath": "/v1/third-party/s3/schmooze-media/static-assets/app-assets/shortcut/blurred-profile/female-10.webp",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/third-party/s3/schmooze-media/static-assets/app-assets/shortcut/blurred-profile/female-29.webp",
+      "category": "assets",
+      "requiresAccessToken": true,
+      "requiresClientSignature": false,
+      "samplePath": "/v1/third-party/s3/schmooze-media/static-assets/app-assets/shortcut/blurred-profile/female-29.webp",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/third-party/s3/schmooze-media/static-assets/app-assets/shortcut/blurred-profile/female-30.webp",
+      "category": "assets",
+      "requiresAccessToken": true,
+      "requiresClientSignature": false,
+      "samplePath": "/v1/third-party/s3/schmooze-media/static-assets/app-assets/shortcut/blurred-profile/female-30.webp",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/third-party/s3/schmooze-media/static-assets/app-assets/shortcut/blurred-profile/female-31.webp",
+      "category": "assets",
+      "requiresAccessToken": true,
+      "requiresClientSignature": false,
+      "samplePath": "/v1/third-party/s3/schmooze-media/static-assets/app-assets/shortcut/blurred-profile/female-31.webp",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/third-party/s3/schmooze-media/static-assets/app-assets/shortcut/blurred-profile/female-32.webp",
+      "category": "assets",
+      "requiresAccessToken": true,
+      "requiresClientSignature": false,
+      "samplePath": "/v1/third-party/s3/schmooze-media/static-assets/app-assets/shortcut/blurred-profile/female-32.webp",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/third-party/s3/schmooze-media/static-assets/app-assets/shortcut/blurred-profile/female-34.webp",
+      "category": "assets",
+      "requiresAccessToken": true,
+      "requiresClientSignature": false,
+      "samplePath": "/v1/third-party/s3/schmooze-media/static-assets/app-assets/shortcut/blurred-profile/female-34.webp",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/third-party/s3/schmooze-media/static-assets/app-assets/shortcut/blurred-profile/female-44.webp",
+      "category": "assets",
+      "requiresAccessToken": true,
+      "requiresClientSignature": false,
+      "samplePath": "/v1/third-party/s3/schmooze-media/static-assets/app-assets/shortcut/blurred-profile/female-44.webp",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/third-party/s3/schmooze-media/static-assets/app-assets/shortcut/blurred-profile/female-47.webp",
+      "category": "assets",
+      "requiresAccessToken": true,
+      "requiresClientSignature": false,
+      "samplePath": "/v1/third-party/s3/schmooze-media/static-assets/app-assets/shortcut/blurred-profile/female-47.webp",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/third-party/s3/schmooze-media/static-assets/app-assets/shortcut/blurred-profile/female-6.webp",
+      "category": "assets",
+      "requiresAccessToken": true,
+      "requiresClientSignature": false,
+      "samplePath": "/v1/third-party/s3/schmooze-media/static-assets/app-assets/shortcut/blurred-profile/female-6.webp",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/third-party/s3/schmooze-media/user-media_02c96c79-1b6f-4337-8b38-fa27d7c39e13.jpg",
+      "category": "assets",
+      "requiresAccessToken": true,
+      "requiresClientSignature": false,
+      "samplePath": "/v1/third-party/s3/schmooze-media/user-media_02c96c79-1b6f-4337-8b38-fa27d7c39e13.jpg",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/third-party/s3/schmooze-media/user-media_3488bf62-6970-485a-a2f4-d832acba7654.jpg",
+      "category": "assets",
+      "requiresAccessToken": true,
+      "requiresClientSignature": false,
+      "samplePath": "/v1/third-party/s3/schmooze-media/user-media_3488bf62-6970-485a-a2f4-d832acba7654.jpg",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/third-party/s3/schmooze-media/user-media_7eb66952-68ca-48fe-8053-5b1d07c7ac13.jpg",
+      "category": "assets",
+      "requiresAccessToken": true,
+      "requiresClientSignature": false,
+      "samplePath": "/v1/third-party/s3/schmooze-media/user-media_7eb66952-68ca-48fe-8053-5b1d07c7ac13.jpg",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v1/third-party/s3/schmooze-media/user-media_e53a4ff1-7c3d-4a5e-8520-3eae461222ca.jpg",
+      "category": "assets",
+      "requiresAccessToken": true,
+      "requiresClientSignature": false,
+      "samplePath": "/v1/third-party/s3/schmooze-media/user-media_e53a4ff1-7c3d-4a5e-8520-3eae461222ca.jpg",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v2/app/assets",
+      "category": "app",
+      "requiresAccessToken": true,
+      "requiresClientSignature": true,
+      "samplePath": "/v2/app/assets",
+      "observedAuthorization": true
+    },
+    {
+      "method": "POST",
+      "host": "drogon.schmooze.tech",
+      "path": "/v2/auth/connected-accounts",
+      "category": "auth",
+      "requiresAccessToken": false,
+      "requiresClientSignature": true,
+      "samplePath": "/v2/auth/connected-accounts",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v2/meme-insights/me/all",
+      "category": "app",
+      "requiresAccessToken": true,
+      "requiresClientSignature": true,
+      "samplePath": "/v2/meme-insights/me/all",
+      "observedAuthorization": true
+    },
+    {
+      "method": "POST",
+      "host": "drogon.schmooze.tech",
+      "path": "/v2/users/devices/register",
+      "category": "users",
+      "requiresAccessToken": true,
+      "requiresClientSignature": true,
+      "samplePath": "/v2/users/devices/register",
+      "observedAuthorization": true
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v2/users/force-update",
+      "category": "users",
+      "requiresAccessToken": true,
+      "requiresClientSignature": true,
+      "samplePath": "/v2/users/force-update",
+      "observedAuthorization": true
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v2/users/no-auth-force-update",
+      "category": "users",
+      "requiresAccessToken": false,
+      "requiresClientSignature": true,
+      "samplePath": "/v2/users/no-auth-force-update",
+      "observedAuthorization": false
+    },
+    {
+      "method": "POST",
+      "host": "drogon.schmooze.tech",
+      "path": "/v2/users/session/heartbeat",
+      "category": "users",
+      "requiresAccessToken": true,
+      "requiresClientSignature": true,
+      "samplePath": "/v2/users/session/heartbeat",
+      "observedAuthorization": true
+    },
+    {
+      "method": "POST",
+      "host": "drogon.schmooze.tech",
+      "path": "/v2/users/session/start",
+      "category": "users",
+      "requiresAccessToken": true,
+      "requiresClientSignature": true,
+      "samplePath": "/v2/users/session/start",
+      "observedAuthorization": true
+    },
+    {
+      "method": "POST",
+      "host": "drogon.schmooze.tech",
+      "path": "/v3/auth/login",
+      "category": "auth",
+      "requiresAccessToken": true,
+      "requiresClientSignature": true,
+      "samplePath": "/v3/auth/login",
+      "observedAuthorization": true
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v3/tags/seeds",
+      "category": "app",
+      "requiresAccessToken": true,
+      "requiresClientSignature": true,
+      "samplePath": "/v3/tags/seeds",
+      "observedAuthorization": true
+    },
+    {
+      "method": "POST",
+      "host": "drogon.schmooze.tech",
+      "path": "/v3/users/profiles/view",
+      "category": "users",
+      "requiresAccessToken": true,
+      "requiresClientSignature": true,
+      "samplePath": "/v3/users/profiles/view",
+      "observedAuthorization": true
+    },
+    {
+      "method": "POST",
+      "host": "drogon.schmooze.tech",
+      "path": "/v3/users/welcome",
+      "category": "users",
+      "requiresAccessToken": false,
+      "requiresClientSignature": true,
+      "samplePath": "/v3/users/welcome",
+      "observedAuthorization": false
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v4/matches/pending-match",
+      "category": "matches",
+      "requiresAccessToken": true,
+      "requiresClientSignature": true,
+      "samplePath": "/v4/matches/pending-match",
+      "observedAuthorization": true
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v4/matches/pending-match/shortcut",
+      "category": "matches",
+      "requiresAccessToken": true,
+      "requiresClientSignature": true,
+      "samplePath": "/v4/matches/pending-match/shortcut",
+      "observedAuthorization": true
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v4/users/profiles/me",
+      "category": "users",
+      "requiresAccessToken": true,
+      "requiresClientSignature": true,
+      "samplePath": "/v4/users/profiles/me",
+      "observedAuthorization": true
+    },
+    {
+      "method": "POST",
+      "host": "drogon.schmooze.tech",
+      "path": "/v4/users/profiles/me",
+      "category": "users",
+      "requiresAccessToken": true,
+      "requiresClientSignature": true,
+      "samplePath": "/v4/users/profiles/me",
+      "observedAuthorization": true
+    },
+    {
+      "method": "GET",
+      "host": "drogon.schmooze.tech",
+      "path": "/v7/matches/schmoozed-you",
+      "category": "matches",
+      "requiresAccessToken": true,
+      "requiresClientSignature": true,
+      "samplePath": "/v7/matches/schmoozed-you",
+      "observedAuthorization": true
+    },
+    {
+      "method": "GET",
+      "host": "iron-bank.schmooze.tech",
+      "path": "/v1/products/purchased/items/available",
+      "category": "iap",
+      "requiresAccessToken": false,
+      "requiresClientSignature": true,
+      "samplePath": "/v1/products/purchased/items/available",
+      "observedAuthorization": true
+    },
+    {
+      "method": "GET",
+      "host": "iron-bank.schmooze.tech",
+      "path": "/v1/products/screens",
+      "category": "iap",
+      "requiresAccessToken": false,
+      "requiresClientSignature": true,
+      "samplePath": "/v1/products/screens",
+      "observedAuthorization": true
+    },
+    {
+      "method": "POST",
+      "host": "otel.schmooze.tech",
+      "path": "/collector/v1/logs",
+      "category": "telemetry",
+      "requiresAccessToken": false,
+      "requiresClientSignature": false,
+      "samplePath": "/collector/v1/logs",
+      "observedAuthorization": true
+    },
+    {
+      "method": "POST",
+      "host": "otel.schmooze.tech",
+      "path": "/collector/v1/metrics",
+      "category": "telemetry",
+      "requiresAccessToken": false,
+      "requiresClientSignature": false,
+      "samplePath": "/collector/v1/metrics",
+      "observedAuthorization": true
+    },
+    {
+      "method": "POST",
+      "host": "otel.schmooze.tech",
+      "path": "/collector/v1/traces",
+      "category": "telemetry",
+      "requiresAccessToken": false,
+      "requiresClientSignature": false,
+      "samplePath": "/collector/v1/traces",
+      "observedAuthorization": true
+    },
+    {
+      "method": "POST",
+      "host": "www.googleapis.com",
+      "path": "/identitytoolkit/v3/relyingparty/getAccountInfo",
+      "category": "firebase",
+      "requiresAccessToken": false,
+      "requiresClientSignature": false,
+      "samplePath": "/identitytoolkit/v3/relyingparty/getAccountInfo",
+      "observedAuthorization": false
+    },
+    {
+      "method": "POST",
+      "host": "www.googleapis.com",
+      "path": "/identitytoolkit/v3/relyingparty/verifyCustomToken",
+      "category": "firebase",
+      "requiresAccessToken": false,
+      "requiresClientSignature": false,
+      "samplePath": "/identitytoolkit/v3/relyingparty/verifyCustomToken",
+      "observedAuthorization": false
+    }
+  ]
+}
